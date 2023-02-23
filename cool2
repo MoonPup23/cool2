@@ -1,0 +1,14 @@
+from tkinter import *
+from tkinter import messagebox
+
+
+def e():
+    messagebox.showinfo('Привет', a.get())
+
+
+root = Tk()
+root.geometry('800x400')
+root.title('вход')
+a = Entry(root  ,width=20 ,  )
+a.pack()
+Button(text='войти', bg='white',font=('consolas' , 15) , command=e).pack()
